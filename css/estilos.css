@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    background: #001D3D;
+    height: 80px;
+}
+
+.contenedor{
+    width: 90%;
+    max-height: 80px;
+    background: #001D3D;
+    margin:auto;
+    min-width: fit-content;
+    align-items: center;
+    
+}
+
+header.contenedor{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+.logo{
+    width: 20%;
+    height: 80px;
+    background: #001D3D;
+    float:left;
+    padding-top: 10px;
+}
+
+.logo p a{
+
+    color: #fff;
+    font-size: 40px;
+    font-family:'Open Sans';
+    text-decoration: none;
+
+}
+
+nav{
+    width: 80%;
+    height: 80px;
+    float: right;
+    font-size: 20px;
+    padding-top: 30px;
+    z-index: 1000;
+}
+
+header nav a{
+    color:#ffff;
+    text-decoration: none;
+    margin-right: 30px;
+    
+}
+
+header nav a:hover,
+header nav a.activo{
+    color:  #FFC300;
+    transition: .3s;
+
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu >li{
+    position: relative;
+    display: inline-block;
+}
+
+.submenu{
+    position: absolute;
+    background: #666666;
+    width: 300px;
+    display: none;
+    z-index:10
+}
+
+.submenu li a{
+    font-size: 20px;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+
+/*---pelicula principal---*/
+
+.pelicula-principal{
+    font: 16px;
+    min-height: 40.62em;
+    background: url(../img/backdrop.jpg);
+    background-position: center center;
+    margin-bottom: 3.12em;
+
+}
+   
+/*---media queries---*/
+
+@media screen and(max-width:900px){
+    header.logo{
+        margin-bottom:10px;
+    }
+
+    header.contenedor{
+        flex-direction: column;
+    }
+}
+
+

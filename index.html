@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider();
+        });
+      </script>
+    
+    
+    <title>Cine Metrópolis</title>
+</head>
+<body>
+    <!-- todo esto es el menu -->
+    <header>
+        <div class="contenedor">
+            
+            <div class="logo">
+                <p> <a href="index.html" >Metrópolis</a> </p>
+                
+            </div>
+            
+            
+            <nav class="navegacion">
+                <ul class="menu"style="float:right">
+                    <li> <a href="cartelera" class="activo">Cartelera</a> </li>
+                    <li> <a href="teatro">Teatro</a> </li>
+                    <li> <a href="dulceria">Dulceria</a> </li>
+                    <li> <a href="nosotros">Nosotros</a>
+                        <ul class="submenu">
+                            <li> <a href="informacion_sobre_nosotros">Información sobre nosotros</a> </li>
+                            <li> <a href="servicios_empresariales">Servicios empresariales</a> </li>
+                            <li> <a href="salas">Salas</a>
+                                <li> <a href="contactos">Contactos</a>
+                                    
+                                    
+                                </ul>
+                            </li>
+                            <li style="float:right">
+                                <div class="navegador">
+                                    <form class="navegadorpagina" method="GET" action="aca iria la ruta para buscar cualquier cosa de la pagina" name="formbusqueda" id="formbusqueda" autocomplete="off" >
+                                        <input id="inputHome" placeholder="Que estas buscando..." class="usuario.busca" type="text" name="usuario-escribe" target="right top">
+                                    </form>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </nav>
+                </div>
+                
+            </header>
+            
+            <main>
+                <div class="flexslider">
+                    <div class ="slides">
+                        <li>
+                            <img src="img/backdrop.jpg" alt="">
+                            <section class="flex-caption"></section>
+                        </li>
+                        <li>
+                            <img src="img/avengers.jpg" alt="">
+                            <section class="flex-caption"></section>
+                        </li>
+                        <li>
+                            <img src="img/imagen3.jpg" alt="">
+                            <section class="flex-caption"></section>
+                        </li>
+                        
+                        
+                    </div>
+                </div>
+                
+            </main>
+            
+        </body>
+        
+        
+        
+       
+        
+        
+        </html>
