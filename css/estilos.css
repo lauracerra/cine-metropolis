@@ -18,6 +18,9 @@ header{
     margin:auto;
     min-width: fit-content;
     align-items: center;
+    display: grid;
+    grid-template:
+    "header ";
     
 }
 
