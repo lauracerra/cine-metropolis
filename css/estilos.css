@@ -18,9 +18,10 @@ header{
     margin:auto;
     min-width: fit-content;
     align-items: center;
+    /* Comentario 
     display: grid;
     grid-template:
-    "header ";
+    "header ";*/
     
 }
 
