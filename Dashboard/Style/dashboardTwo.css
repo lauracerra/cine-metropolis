@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background-image: url(/Dashboard/images/background/back3.jpg);
+    background-size: 100% ;
+}
+
+.container{
+    
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+    grid-template: 
+            "navbar navbar" 120px
+            "sidebar usermain" 1fr /
+              160px     1fr;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: transparent;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: #003566;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.usermain{
+    grid-area: usermain;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 20px;
+    
+}
+.fa-film{
+    color: #FFC300;
+    font-size: 50px;
+    
+}
+.usericon{
+    background: none;
+    border: none;
+}
+.user-icon{
+    width: 50px;
+    height: 50px;
+}
+.user{
+    margin: 0 47px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+}
+.film-logo{
+    margin: 0 47px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+}
+.user i{
+    margin: 0 8px;
+}
+.fa-sort-down{
+    font-size: 25px;
+}
+.fa-bell{
+    font-size: 25px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar{
+    border-radius: 0px 80px 0px 0px;
+    -webkit-border-radius: 0px 80px 0px 0px;
+    -moz-border-radius: 0px 80px 0px 0px;
+    -ms-border-radius: 0px 80px 0px 0px;
+    -o-border-radius: 0px 80px 0px 0px;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.sidebar-menu-item{
+   margin: 15px 0px;
+   padding-left: 30px;
+}
+
+.button-sidebar{
+    border: none;
+    text-decoration: none;
+    background: none;
+    color: white;
+}
+.sidebar-menu-img{
+    width: 30px;
+    height: 30px;
+}
+.sidebar-menu-title{
+    font-size: 15px;
+    margin: 0px 10px;
+}
+.div-sidebar-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2px 8px;
+}
+
+.div-sidebar-button-movies{
+    background-color: #5B81C8;
+    border-radius: 18px 0px 0px 18px;
+    -webkit-border-radius: 18px 0px 0px 18px;
+    -moz-border-radius: 18px 0px 0px 18px;
+    -ms-border-radius: 18px 0px 0px 18px;
+    -o-border-radius: 18px 0px 0px 18px;
+}

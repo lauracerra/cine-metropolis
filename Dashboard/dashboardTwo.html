@@ -9,6 +9,57 @@
     <title>Dashboard2</title>
 </head>
 <body>
-    
+    <div class="container">
+        <nav class="navbar">
+            <header class="header">
+                <div class="film-logo">
+                    <i class="fas fa-film"></i>
+                </div>
+                <div class="user">
+                    <!-- aqui van los logos de usuario, flecha hacia abajo y notificacion -->
+                    <i class="far fa-bell"></i> 
+                    <button class="usericon">
+                        <img class="user-icon" src="images/icons/user_female.png" alt="">
+                    </button>
+                    <div class="sort-down">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    
+                </div>
+            </header>
+        </nav>
+        <aside class="sidebar">
+            <!-- aqui va la columna de opciones como "usuario","perfil" y peliculas -->
+            <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                    <button class="button-sidebar button-perfil sidebar-menu">
+                        <div class="div-sidebar-button">
+                            <img src="images/icons/user_female.png" alt="" class="sidebar-menu-img"> 
+                            <h1 class="sidebar-menu-title">Perfil</h1>
+                        </div>
+                    </button>
+                </li>
+                <li class="sidebar-menu-item">
+                    <button class="button-sidebar button-usuarios"> 
+                        <div class="div-sidebar-button ">
+                            <img src="images/icons/user_group.png" alt="" class="sidebar-menu-img"> 
+                            <h1 class="sidebar-menu-title ">Usuarios</h1>
+                        </div> 
+                    </button>
+                </li>
+                <li class="sidebar-menu-item li-movie">
+                    <button class="button-sidebar button-peliculas"> 
+                        <div class="div-sidebar-button div-sidebar-button-movies">
+                            <img src="images/icons/movies_folder.png" alt="" class="sidebar-menu-img"> 
+                            <h1 class="sidebar-menu-title">Peliculas</h1>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </aside>
+        <main class="usermain">
+            <!-- aqui va una tabla con todos los usuarios -->
+        </main>
+    </div>    
 </body>
 </html>
