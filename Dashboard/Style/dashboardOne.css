@@ -5,7 +5,7 @@
 body {
     font-family: sans-serif;
     background-image: url(/Dashboard/images/background/back3.jpg);
-    background-size: 100% ;
+    background-size: 100%;
 }
 
 .container{
@@ -14,7 +14,7 @@ body {
     height: 100vh;
     gap: 20px;
     grid-template: 
-            "navbar navbar" 120px
+            "navbar navbar" 100px
             "sidebar usermain" 1fr /
               160px     1fr;
 }
@@ -33,19 +33,24 @@ body {
 }
 .usermain{
     grid-area: usermain;
-    background-color: #FFFFFF;
+    background-color: #F9FDFD;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    margin: 20px;
-    
+    margin: 20px 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template: 
+        "";
+}
+.search-users{
+    background-color: #E5EDEC;
 }
 .fa-film{
     color: #FFC300;
-    font-size: 50px;
-    
+    width: 3rem;
 }
 .usericon{
     background: none;
@@ -56,14 +61,13 @@ body {
     height: 50px;
 }
 .user{
-    margin: 0 47px;
-    line-height: 80px;
+    margin: 0 60px;
+    line-height: 130px;
     display: flex;
     align-items: center;
 }
 .film-logo{
-    margin: 0 47px;
-    line-height: 80px;
+    margin: 0px 38px;
     display: flex;
     align-items: center;
 }
@@ -126,4 +130,7 @@ body {
     -moz-border-radius: 18px 0px 0px 18px;
     -ms-border-radius: 18px 0px 0px 18px;
     -o-border-radius: 18px 0px 0px 18px;
+}
+.usermain-search{
+
 }
