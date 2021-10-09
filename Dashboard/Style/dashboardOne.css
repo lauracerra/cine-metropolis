@@ -51,7 +51,10 @@ body {
 .usericon{
     background: none;
     border: none;
-    font-size: 30px;
+}
+.user-icon{
+    width: 50px;
+    height: 50px;
 }
 .user{
     margin: 0 47px;
@@ -78,4 +81,50 @@ body {
 .header{
     display: flex;
     justify-content: space-between;
+}
+.sidebar{
+    border-radius: 0px 80px 0px 0px;
+    -webkit-border-radius: 0px 80px 0px 0px;
+    -moz-border-radius: 0px 80px 0px 0px;
+    -ms-border-radius: 0px 80px 0px 0px;
+    -o-border-radius: 0px 80px 0px 0px;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.sidebar-menu-item{
+   margin: 15px 0px;
+   padding-left: 30px;
+}
+
+.button-sidebar{
+    border: none;
+    text-decoration: none;
+    background: none;
+    color: white;
+}
+.sidebar-menu-img{
+    width: 30px;
+    height: 30px;
+}
+.sidebar-menu-title{
+    font-size: 15px;
+    margin: 0px 10px;
+}
+.div-sidebar-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2px 8px;
+}
+
+.div-sidebar-button-users{
+    background-color: #5B81C8;
+    border-radius: 18px 0px 0px 18px;
+    -webkit-border-radius: 18px 0px 0px 18px;
+    -moz-border-radius: 18px 0px 0px 18px;
+    -ms-border-radius: 18px 0px 0px 18px;
+    -o-border-radius: 18px 0px 0px 18px;
 }
