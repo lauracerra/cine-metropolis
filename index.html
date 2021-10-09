@@ -1,98 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="flexslider.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function() {
-          $('.flexslider').flexslider();
-        });
-      </script>
-    
-    
-    <title>Cine Metrópolis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos1.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
+	<title>Cine Metrópolis</title>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
-  <body>
-    <!-- todo esto es el menu -->
-    <!-- todo esto es el menu -->
-    <header>
-        <div class="contenedor">
-            
-            <div class="logo">
-                <p> <a href="index.html" >Metrópolis</a> </p>
-                
-            </div>
-            
-            
-            <nav class="navegacion">
-                <ul class="menu"style="float:right">
-                    <li> <a href="cartelera" class="activo">Cartelera</a> </li>
-                    <li> <a href="teatro">Teatro</a> </li>
-                    <li> <a href="dulceria">Dulceria</a> </li>
-                    <li> <a href="nosotros">Nosotros</a>
-                        <ul class="submenu">
-                            <li> <a href="informacion_sobre_nosotros">Información sobre nosotros</a> </li>
-                            <li> <a href="servicios_empresariales">Servicios empresariales</a> </li>
-                            <li> <a href="salas">Salas</a>
-                                <li> <a href="contactos">Contactos</a>
-                                    
-                                    
-                                </ul>
-                            </li>
-                            <li style="float:right">
-                                <div class="navegador">
-                                    <form class="navegadorpagina" method="GET" action="aca iria la ruta para buscar cualquier cosa de la pagina" name="formbusqueda" id="formbusqueda" autocomplete="off" >
-                                        <input id="inputHome" placeholder="Que estas buscando..." class="usuario.busca" type="text" name="usuario-escribe" target="right top">
-                                    </form>
-                                </div>
-                            </li>
-                            
-                            
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-                
-            </header>
+
+<body>
+	<header class="header">
+		<div class="contenedor">
+			<div class="contenedor_cabecera">
+				<div class="logo">
+					<p> <a href="index.html">Metrópolis</a> </p>
+
+				</div>
+				<nav class="navegacion">
+					<ul class="menu" style="float:right">
+						<div style="display: flex; flex-direction: row;">
+							<li> <a href="index.html" class="activo">Cartelera</a> </li>
+							<li> <a href="teatro">Teatro</a> </li>
+							<li> <a href="dulceria">Dulceria</a> </li>
+							<li> <a href="nosotros">Nosotros</a>
+								<ul class="submenu">
+									<li> <a href="informacion_sobre_nosotros">Información sobre nosotros</a> </li>
+									<li> <a href="servicios_empresariales">Servicios empresariales</a> </li>
+									<li> <a href="salas">Salas</a></li>
+									<li> <a href="contactos">Contactos</a></li>
+								</ul>
+							</li>
+						</div>
+						<div style="display: flex; flex-direction: row">
+							<li style="margin-right: 70px;">
+								<div class="navegador">
+									<form class="navegadorpagina" method="GET"
+										action="aca iria la ruta para buscar cualquier cosa de la pagina"
+										name="formbusqueda" id="formbusqueda" autocomplete="off">
+										<input id="inputHome" placeholder="Que estas buscando..." class="usuario.busca"
+											type="text" name="usuario-escribe" target="right top">
+									</form>
+								</div>
+							</li>
+							<li style="float: right" id="avatarIcon">
+								<span class="fa fa-user-circle" style="color: white; font-size: 32px;"></span>
+								<div class="login-signup-menu" id="loginSignupMenu">
+									Acá va el link hacia login o signup
+								</div>
+							</li>
+						</div>
+					</ul>
+				</nav>
+			</div>
+
+	</header>
+
+	<main>
+		<div class="slideshow">
+			<ul class="slider">
+				<li>
+					<img src="img/1.jpg" alt="">
+					<section class="caption">
+						<h1>Lorem ipsum 1</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem
+							quisquam unde.</p>
+					</section>
+				</li>
+				<li>
+					<img src="img/2.jpg" alt="">
+					<section class="caption">
+						<h1>Lorem ipsum 2</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem
+							quisquam unde.</p>
+					</section>
+				</li>
+				<li>
+					<img src="img/3.jpg" alt="">
+					<section class="caption">
+						<h1>Lorem ipsum 3</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem
+							quisquam unde.</p>
+					</section>
+				</li>
+				<li>
+					<img src="img/4.jpg" alt="">
+					<section class="caption">
+						<h1>Lorem ipsum 4</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem
+							quisquam unde.</p>
+					</section>
+				</li>
+			</ul>
+
+			<ol class="pagination">
+
+			</ol>
+
+			<div class="left">
+				<span class="fa fa-chevron-left"></span>
+			</div>
+
+			<div class="right">
+				<span class="fa fa-chevron-right"></span>
+			</div>
+		</div>
+	</main>
+
+	<div class="contenedorfooter">
+		<footer>
+			<div class="contenidofooter">
+				<div class="box_footer">
+					<h2>Sobre RevisTIC</h2>
+					<ul type="none">
+						<li>
+							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Proyecto</a>
+						</li>
+						<li>
+							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Socios</a>
+						</li>
+						<li>
+							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Publico
+								objetivo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box_footer">
+				<div class="legal">
+					<h2>Legal</h2>
+					<ul type="none">
+						<li>
+							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Politica de
+								privacidad</a>
+						</li>
+						<li>
+							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Terminos y
+								condiciones</a>
+						</li>
+						<li>
+							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Terminos de
+								servicio</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box_footer">
+				<div class="redes">
+					<h2>Siguenos</h2>
+					<ul type="none">
+						<li>
+							<a href="aca va el link red social" target="_parent"><img src="img/instagram.png"
+									alt="instagram" width="25"></a>
+						</li>
+						<li>
+							<a href="aca va el link red social" target="_parent"><img
+									src="img/icon-facebook-vector-4.png" alt="facebook" width="28"></a>
+						</li>
+						<li>
+							<a href="aca va el link red social" target="_parent"><img
+									src="img/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="28"></a>
+						</li>
+						<li>
+							<a href="aca va el link red social" target="_parent"><img src="img/1384012.png"
+									alt="youtube" width="25"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 
-            
-            <main>
-                <div class="flexslider">
-                    <div class ="slides">
-                        <li>
-                            <img src="img/backdrop.jpg" alt="" width="50%" height="50%">
-                            <section class="flex-caption"></section>
-                        </li>
-                        <li>
-                            <img src="img/avengers.jpg" alt="" width="50%" height="50%">
-                            <section class="flex-caption"></section>
-                        </li>
-                        <li>
-                            <img src="img/imagen3.jpg" alt="" width="50%" height="50%">
-                            <section class="flex-caption"></section>
-                        </li>
-                        
-                        
-                    </div>
-                </div>
-                
-            </main>
-            
-        </body>
-        
-        
-        
-       
-        
-        
-        </html>
+	</div>
+</body>
+
+</html>
