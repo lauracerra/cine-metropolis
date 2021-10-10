@@ -4,7 +4,7 @@
 }
 body {
     font-family: sans-serif;
-    background-image: url(/Dashboard/images/background/back3.jpg);
+    background-image: url(../images/background/back3.jpg);
     background-size: 100% ;
 }
 
@@ -62,8 +62,7 @@ body {
     align-items: center;
 }
 .film-logo{
-    margin: 0 47px;
-    line-height: 80px;
+    margin: 0px 38px;
     display: flex;
     align-items: center;
 }
