@@ -4,7 +4,7 @@
 }
 body {
     font-family: sans-serif;
-    background-image: url(/Dashboard/images/background/back3.jpg);
+    background-image: url(../images/background/back3.jpg);
     background-size: 100% ;
 }
 
@@ -119,7 +119,7 @@ body {
     padding: 2px 8px;
 }
 
-.div-sidebar-button-movies{
+.div-sidebar-button-peliculas{
     background-color: #5B81C8;
     border-radius: 18px 0px 0px 18px;
     -webkit-border-radius: 18px 0px 0px 18px;
