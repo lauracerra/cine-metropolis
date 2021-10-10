@@ -43,11 +43,11 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: grid;
     grid-template: 
-        "usermain-search";
+        "usermain-search" 15%
+        "usermain-table" auto /
+               1fr;
 }
-.search-users{
-    background-color: #E5EDEC;
-}
+
 .fa-film{
     color: #FFC300;
     width: 3rem;
@@ -131,10 +131,55 @@ body {
     -ms-border-radius: 18px 0px 0px 18px;
     -o-border-radius: 18px 0px 0px 18px;
 }
-.usermain-search{
 
-}
 /*css tabla de usermain*/
-table, th, td{
-    border: .5px solid black;
+td{
+    text-align: center;
+    padding: 15px 0px;
+    
+}
+th,td{
+    border-bottom: 1px solid #ddd;
+}
+
+.tr-color-gris{
+    background-color: #F1F1F1;
+}
+.usermain-table{
+    grid-area: usermain-table;
+}
+.usermain-search{
+    grid-area: usermain-search;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.search-users{
+    background-color: #E5EDEC;
+    padding: .4em;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+}
+.table{
+    border-collapse: collapse;
+    margin: 1rem;
+    width: 95%;
+}
+.estado{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.estado-activo{
+    background-color: #0A65FF;
+}
+.tr-thead{
+    background-color: #003566;
+    color: #FFFFFF;
 }
