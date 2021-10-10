@@ -62,8 +62,7 @@ body {
     align-items: center;
 }
 .film-logo{
-    margin: 0 47px;
-    line-height: 80px;
+    margin: 0px 38px;
     display: flex;
     align-items: center;
 }
@@ -119,7 +118,7 @@ body {
     padding: 2px 8px;
 }
 
-.div-sidebar-button-peliculas{
+.div-sidebar-button-movies{
     background-color: #5B81C8;
     border-radius: 18px 0px 0px 18px;
     -webkit-border-radius: 18px 0px 0px 18px;
