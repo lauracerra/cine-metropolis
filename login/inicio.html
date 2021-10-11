@@ -5,170 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="estilos/estilo1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <script src="jss/jquery-3.6.0.min.js"></script>
+	<script src="jss/formulario.js"></script>
+    
+    <title>login</title>
 </head>
 <body>
-
+    
     <!-- aqui comienza el menu de navegacion -->
-
+    
     <header class="header">
-		<div class="contenedor">
-			<div class="contenedor_cabecera">
-				<div class="logo">
-					<p> <a href="index.html">Metrópolis</a> </p>
+        <div class="contenedor">
+            <div class="contenedor_cabecera">
+                <div class="logo">
+                    <p> <a href="../index.html">Metrópolis</a> </p>
+                    
+                </div>
+                <nav class="navegacion">
+                    <ul class="menu" style="float:right">
+                        <div style="display: flex; flex-direction: row;">
+                            <li> <a href="index.html" class="activo">Cartelera</a> </li>
+                            <li> <a href="teatro">Teatro</a> </li>
+                            <li> <a href="dulceria">Dulceria</a> </li>
+                            <li> <a href="nosotros">Nosotros</a>
+                                <ul class="submenu">
+                                    <li> <a href="informacion_sobre_nosotros">Información sobre nosotros</a> </li>
+                                    <li> <a href="servicios_empresariales">Servicios empresariales</a> </li>
+                                    <li> <a href="salas">Salas</a></li>
+                                    <li> <a href="contactos">Contactos</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div style="display: flex; flex-direction: row">
+                            <li style="margin-right: 70px;">
+                                <div class="navegador">
+                                    <form class="navegadorpagina" method="GET"
+                                    action="aca iria la ruta para buscar cualquier cosa de la pagina"
+                                    name="formbusqueda" id="formbusqueda" autocomplete="off">
+                                    <input id="inputHome" placeholder="Que estas buscando..." class="usuario.busca"
+                                    type="text" name="usuario-escribe" target="right top">
+                                </form>
+                            </div>
+                        </li>
+                        <li style="float: right" id="avatarIcon">
+                            <span class="fa fa-user-circle" style="color: white; font-size: 32px;"></span>
+                            <div class="login-signup-menu" id="loginSignupMenu">
+                                <nav class="navegacion2">
 
-				</div>
-				<nav class="navegacion">
-					<ul class="menu" style="float:right">
-						<div style="display: flex; flex-direction: row;">
-							<li> <a href="index.html" class="activo">Cartelera</a> </li>
-							<li> <a href="teatro">Teatro</a> </li>
-							<li> <a href="dulceria">Dulceria</a> </li>
-							<li> <a href="nosotros">Nosotros</a>
-								<ul class="submenu">
-									<li> <a href="informacion_sobre_nosotros">Información sobre nosotros</a> </li>
-									<li> <a href="servicios_empresariales">Servicios empresariales</a> </li>
-									<li> <a href="salas">Salas</a></li>
-									<li> <a href="contactos">Contactos</a></li>
-								</ul>
-							</li>
-						</div>
-						<div style="display: flex; flex-direction: row">
-							<li style="margin-right: 70px;">
-								<div class="navegador">
-									<form class="navegadorpagina" method="GET"
-										action="aca iria la ruta para buscar cualquier cosa de la pagina"
-										name="formbusqueda" id="formbusqueda" autocomplete="off">
-										<input id="inputHome" placeholder="Que estas buscando..." class="usuario.busca"
-											type="text" name="usuario-escribe" target="right top">
-									</form>
-								</div>
-							</li>
-							<li style="float: right" id="avatarIcon">
-								<span class="fa fa-user-circle" style="color: white; font-size: 32px;"></span>
-								<div class="login-signup-menu" id="loginSignupMenu">
-									Acá va el link hacia login o signup
-								</div>
-							</li>
-						</div>
-					</ul>
-				</nav>
-			</div>
+                                    <ul  style="float:right;" >
+                                        <div style="display: flex; flex-direction: column;">
+                                            <li> <a href="../login/inicio.html" style="color: black;" >login</a> </li>
+                                            <li> <a href="registrarse" style="color: black;">registro</a> </li>
 
-	</header>
+                                        </div>  
+                                    </ul>
 
-    <!-- aqui termina el menu de navegacion -->
-
-    <div class="login">
+                                </nav>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
         
-        <div class="cod-container">
-            <div class="form-header">
-                <img src="imagenes/logo1.png" alt="logo de cineMetropolis" >
-                <h1> Bienvenido </h1>
+    </header>
+    
+    <!-- aqui termina el menu de navegacion -->
+    
+    
+    <div class="hola">
+        <div class="login">
+            
+            <div class="cod-container">
+                <div class="form-header">
+                    <img src="imagenes/logo1.png" alt="logo de cineMetropolis" >
+                    <h1> Bienvenido </h1>
+                </div>
+                
+                <div class="form-content">
+                    <form action="#" class="cod-form">
+                        <div class="form-title">
+                            <h3>Ingrese a su cuenta</h3>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class ="form-input" name="form-input" id="correo">
+                            <label class="label" for="correo">correo</label>
+                            
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="password" class ="form-input" name="form-input" id="pass">
+                            <label class="label" for="pass">contraseña</label>
+                            
+                        </div>
+                        
+                        
+                        
+                        <div class="input-group">
+                            <input type="submit" value="Iniciar Sesión" style="margin: 0% 10px;">
+                            <input type="submit" value="Registrarse" style="margin: 0% 10px;">
+                            
+                        </div>
+
+                        <div class="input-group">
+                            
+                            <p>No tienes cuenta? <a href="#"class="alt-form"> Ingresa aquí </a></p>
+                            
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+                
+                
             </div>
             
-            <div class="form-content">
-                <form action="#" class="cod-form">
-                    <div class="form-title">
-                        <h3>Iniciar Sesión</h3>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" class ="form-input" name="form-input" id="correo">
-                        <label class="label" for="correo">correo</label>
-
-                    </div>
-
-                    <div class="input-group">
-                        <input type="password" class ="form-input" name="form-input" id="pass">
-                        <label class="label" for="pass">contraseña</label>
-
-                    </div>
-
-                    <div class="input-group">
-                        <input type="submit" value="Iniciar Sesión">
-                        <p>No tienes cuenta? <a href="#"class="alt-form"> Ingresa aquí </a></p>
-
-                    </div>
-
-
-                </form>
-            </div>
-
-
+            
+            
         </div>
-
-
-
     </div>
-
-
- <!-- footer -->
-
-    <div class="contenedorfooter">
-		<footer>
-			<div class="contenidofooter">
-				<div class="box_footer">
-					<h2>Sobre RevisTIC</h2>
-					<ul type="none">
-						<li>
-							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Proyecto</a>
-						</li>
-						<li>
-							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Socios</a>
-						</li>
-						<li>
-							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Publico
-								objetivo</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="box_footer">
-				<div class="legal">
-					<h2>Legal</h2>
-					<ul type="none">
-						<li>
-							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Politica de
-								privacidad</a>
-						</li>
-						<li>
-							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Terminos y
-								condiciones</a>
-						</li>
-						<li>
-							<a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Terminos de
-								servicio</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="box_footer">
-				<div class="redes">
-					<h2>Siguenos</h2>
-					<ul type="none">
-						<li>
-							<a href="aca va el link red social" target="_parent"><img src="img/instagram.png"
-									alt="instagram" width="25"></a>
-						</li>
-						<li>
-							<a href="aca va el link red social" target="_parent"><img
-									src="img/icon-facebook-vector-4.png" alt="facebook" width="28"></a>
-						</li>
-						<li>
-							<a href="aca va el link red social" target="_parent"><img
-									src="img/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="28"></a>
-						</li>
-						<li>
-							<a href="aca va el link red social" target="_parent"><img src="img/1384012.png"
-									alt="youtube" width="25"></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</div>
-
-
     
-</body>
-</html>
+    
+    <!-- footer -->
+    
+    <div class="contenedorfooter">
+        <footer>
+            <div class="contenidofooter">
+                <div class="box_footer">
+                    <h2>Sobre RevisTIC</h2>
+                    <ul type="none">
+                        <li>
+                            <a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Proyecto</a>
+                        </li>
+                        <li>
+                            <a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Socios</a>
+                        </li>
+                        <li>
+                            <a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Publico
+                                objetivo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <div class="legal">
+                        <h2>Legal</h2>
+                        <ul type="none">
+                            <li>
+                                <a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Politica de
+                                    privacidad</a>
+                                </li>
+                                <li>
+                                    <a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Terminos y
+                                        condiciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="aca va el link que lleva a explicar sobre la revista" target="_parent">Terminos de
+                                            servicio</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box_footer">
+                                <div class="redes">
+                                    <h2>Siguenos</h2>
+                                    <ul type="none">
+                                        <li>
+                                            <a href="aca va el link red social" target="_parent"><img src="img/instagram.png"
+                                                alt="instagram" width="25"></a>
+                                            </li>
+                                            <li>
+                                                <a href="aca va el link red social" target="_parent"><img
+                                                    src="img/icon-facebook-vector-4.png" alt="facebook" width="28"></a>
+                                                </li>
+                                                <li>
+                                                    <a href="aca va el link red social" target="_parent"><img
+                                                        src="img/Black-icon-Twitter-logo-transparent-PNG.png" alt="twitter" width="28"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="aca va el link red social" target="_parent"><img src="img/1384012.png"
+                                                            alt="youtube" width="25"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                    
+                                    
+                                    
+                                </body>
+                                </html>
