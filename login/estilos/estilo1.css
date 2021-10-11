@@ -105,7 +105,7 @@ header nav a.activo {
 }
 
 .login-signup-menu {
-	background-color: white;
+	background-color: #666666;
 	padding: 5px;
 	min-width: 50px;
 	min-height: 50px;
@@ -113,14 +113,19 @@ header nav a.activo {
 	top: 80px;
 	right: 32px;
 	display: none;
-}
-
-nav.navegacion2 ul div li a:hover{
-	color:  #FFC300;
-	transition: .3s;
+	flex-direction: column;
 
 }
 
+.login-signup-menu a{
+	color:#fff;
+	
+}
+.login-signup-menu a:hover{
+	cursor: pointer;
+	color:#FFC300;
+
+}
 /* ---- ----- ----- area del login----- ----- ----- */
 
 

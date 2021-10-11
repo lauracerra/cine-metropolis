@@ -108,14 +108,25 @@ header nav a.activo {
 }
 
 .login-signup-menu {
-	background-color: white;
+	background-color: #666666;
 	padding: 5px;
 	min-width: 50px;
-	min-height: 100px;
+	min-height: 50px;
 	position: absolute;
 	top: 80px;
 	right: 32px;
 	display: none;
+	flex-direction: column;
+}
+
+.login-signup-menu a{
+	color:#fff;
+	
+}
+.login-signup-menu a:hover{
+	cursor: pointer;
+	color:#FFC300;
+
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
