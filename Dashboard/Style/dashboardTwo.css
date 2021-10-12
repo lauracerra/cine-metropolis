@@ -39,7 +39,11 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    margin: 20px;
+    margin: 20px 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template: 
+        "";
     
 }
 .fa-film{
@@ -118,11 +122,27 @@ body {
     padding: 2px 8px;
 }
 
-.div-sidebar-button-movies{
+.div-sidebar-button-peliculas{
     background-color: #5B81C8;
     border-radius: 18px 0px 0px 18px;
     -webkit-border-radius: 18px 0px 0px 18px;
     -moz-border-radius: 18px 0px 0px 18px;
     -ms-border-radius: 18px 0px 0px 18px;
     -o-border-radius: 18px 0px 0px 18px;
+}
+
+.usermain-search{
+    position: relative;
+    padding: 5px;
+}
+
+.usermain-search input{
+    width: 250px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #E5EDEC;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
 }
