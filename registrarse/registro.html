@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <script src="jss/jquery-3.6.0.min.js"></script>
+    <script src="jss/formulario.js"></script>
+    <title>registro</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="contenedor_cabecera">
+                <div class="logo">
+                    <p> <a href="../index.html">Metrópolis</a> </p>
+
+                </div>
+                <nav class="navegacion">
+                    <ul class="menu" style="float:right">
+                        <div style="display: flex; flex-direction: row;">
+                            <li> <a href="index.html" class="activo">Cartelera</a> </li>
+                            <li> <a href="teatro">Teatro</a> </li>
+                            <li> <a href="dulceria">Dulceria</a> </li>
+                            <li> <a href="nosotros">Nosotros</a>
+                                <ul class="submenu">
+                                    <li> <a href="informacion_sobre_nosotros">Información sobre nosotros</a> </li>
+                                    <li> <a href="servicios_empresariales">Servicios empresariales</a> </li>
+                                    <li> <a href="salas">Salas</a></li>
+                                    <li> <a href="contactos">Contactos</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div style="display: flex; flex-direction: row">
+                            <li style="margin-right: 70px;">
+                                <div class="navegador">
+                                    <form class="navegadorpagina" method="GET"
+                                        action="aca iria la ruta para buscar cualquier cosa de la pagina"
+                                        name="formbusqueda" id="formbusqueda" autocomplete="off">
+                                        <input id="inputHome" placeholder="Que estas buscando..." class="usuario.busca"
+                                            type="text" name="usuario-escribe" target="right top">
+                                    </form>
+                                </div>
+                            </li>
+                            <li style="float: right" id="avatarIcon">
+                                <span class="fa fa-user-circle" style="color: white; font-size: 32px;"></span>
+                                <div class="login-signup-menu" id="loginSignupMenu">
+                                    <a href="inicio.html">login</a>
+                                    <a href="registrarse">registro</a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+    <div class="login">
+
+        <div class="cod-container">
+            <div class="form-header">
+                <h1> Registro </h1>
+            </div>
+
+            <div class="container">
+
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <section class="form-register">
+                            <input class="control" type="nombres" name="nombres" id="nombres"
+                                placeholder="Nombre Completo">
+                            <input class="control" type="documento" name="documento" id="documento"
+                                placeholder="Documento De Identidad">
+                            <input class="control" type="email" name="email" id="email"
+                                placeholder="Correo Electronico">
+                            <input class="control" type="celular" name="celular" id="celular"
+                                placeholder="Numero de celular">
+                            <input class="control" type="fechadenacimiento" name="fechadenacimiento"
+                                id="fechadenacimiento" placeholder="Fecha De Nacimiento">
+                            <input class="control" type="ciudad" name="ciudad" id="ciudad"
+                                placeholder="Ingrese Su Ciudad">
+                            <input class="control" type="direccion" name="direccion" id="direccion"
+                                placeholder="Direccion">
+                            <input class="control" type="genero" name="genero" id="genero" placeholder="Genero">
+                            <input class="control" type="contraseña" name="contraseña" id="contraseña"
+                                placeholder="Ingrese Una Contraseña">
+                            <input class="control" type="confirmarcontraseña" name="confirmarcontraseña"
+                                id="confirmarcontraseña" placeholder="Confirme La Contraseña">
+                        </section>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Acepta términos
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
