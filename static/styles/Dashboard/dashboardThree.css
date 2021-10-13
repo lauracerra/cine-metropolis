@@ -103,13 +103,6 @@ body {
    margin: 15px 0px;
    padding-left: 30px;
 }
-.button-sort-down{
-    border: none;
-    text-decoration: none;
-    background: none;
-    color: black;
-    cursor: pointer;
-}
 
 .button-sidebar{
     border: none;
