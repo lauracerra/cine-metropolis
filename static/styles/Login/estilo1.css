@@ -13,6 +13,8 @@ ul,ol{
 body {
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
@@ -290,15 +292,17 @@ input[type="submit"] {
 	width: 100%;
 	color: white;
 	background: #061838;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 5% 10%;
 	
 }
 .contenedorfooter{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	max-width: 1200px;
-	margin: auto;
-	margin-top: 50px;
+	width: 100%;
 	
 }
 .box_footer{
