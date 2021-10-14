@@ -142,6 +142,7 @@ header nav a.activo {
   /*.background-image: linear-gradient(to right,#ffff,#7777);
 	
 	height: 600px;*/
+<<<<<<< HEAD
   object-fit: contain;
   background: url(../imagenes/imagen.jpeg);
   background-repeat: no-repeat;
@@ -218,6 +219,53 @@ header nav a.activo {
   text-align: center;
   padding: 20px 0 20px 0;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+=======
+	object-fit: contain;
+	background: url(/static/images/Login/imagen.jpeg);
+	background-repeat:no-repeat ;
+	background-position: center;
+	background-size: cover;
+	min-height: 740px;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+}
+
+.cod-container{
+	margin: auto;
+	align-items: center;
+	background: rgba(255, 255, 255, .85);
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	margin:0px auto;
+	border-radius: 5px;
+	overflow: hidden;
+	
+}
+
+.login h1{
+	font-size: 22px;
+	margin-bottom: 32px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "raleway";
+}
+.form-title{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 32px;
+	color: #FFC300;
+	overflow: hidden;
+	font-family: "raleway";
+	
+>>>>>>> 9f86a26bea748cbf37d73a49d8c42a2296f30559
 }
 
 .form-register {
