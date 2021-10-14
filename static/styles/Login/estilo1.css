@@ -135,7 +135,7 @@ header nav a.activo {
 	
 	height: 600px;*/
 	object-fit: contain;
-	background: url(../imagenes/imagen.jpeg);
+	background: url(/static/images/Login/imagen.jpeg);
 	background-repeat:no-repeat ;
 	background-position: center;
 	background-size: cover;
