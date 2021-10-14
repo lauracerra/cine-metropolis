@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/Dashboard/dashboardTwo.css">
+    <script src="https://kit.fontawesome.com/44b29848c7.js" crossorigin="anonymous"></script>
+    <title>Dashboard2</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <header class="header">
+                <div class="film-logo">
+                    <img src="/static/images/Dashboard/background/back4.png" alt="" class="fas fa-film">
+                </div>
+                <div class="user">
+                    <!-- aqui van los logos de usuario, flecha hacia abajo y notificacion -->
+                    <i class="far fa-bell"></i> 
+                    <button class="usericon">
+                        <img class="user-icon" src="/static/images/Dashboard/icons/user_female.png" alt="">
+                    </button>
+                    <div class="sort-down">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    
+                </div>
+            </header>
+        </nav>
+        <aside class="sidebar">
+            <!-- aqui va la columna de opciones como "usuario","perfil" y peliculas -->
+            <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                    <button class="button-sidebar button-perfil sidebar-menu">
+                        <div class="div-sidebar-button">
+                            <img src="/static/images/Dashboard/icons/user_folder.png" alt="" class="sidebar-menu-img"> 
+                            <h1 class="sidebar-menu-title">Perfil</h1>
+                        </div>
+                    </button>
+                </li>
+                <li class="sidebar-menu-item">
+                    <button class="button-sidebar button-usuarios"> 
+                        <div class="div-sidebar-button">
+                            <img src="/static/images/Dashboard/icons/user_group.png" alt="" class="sidebar-menu-img"> 
+                            <h1 class="sidebar-menu-title ">Usuarios</h1>
+                        </div> 
+                    </button>
+                </li>
+                <li class="sidebar-menu-item">
+                    <button class="button-sidebar button-peliculas"> 
+                        <div class="div-sidebar-button div-sidebar-button-peliculas">
+                            <img src="/static/images/Dashboard/icons/movies_folder.png" alt="" class="sidebar-menu-img"> 
+                            <h1 class="sidebar-menu-title">Peliculas</h1>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </aside>
+        <main class="usermain">
+            <!-- aqui va una tabla con todos los usuarios -->
+            <div class="usermain-search">
+                <input type="text" class="search-users" placeholder="Ingrese id del usuario">
+            </div>
+            <div class="usermain-table">
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="tr-thead">
+                            <th></th>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>ESTADO</th>
+                            <th>ESTADISTICAS</th>
+                            <th>VACIO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="tr-color-gris">
+                            <td>
+                                <input type="checkbox" name="select" id="" class="table-checkbox">
+                            </td>
+                            <td>11</td>
+                            <td>Black Widow</td>
+                            <td>
+                                <div class="estado estado-activo">ACTIVO</div>
+                            </td>
+                            <td>
+                                <div class="credencial credencial-standard">STANDARD</div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-color-gris">
+                            <td>
+                                <input type="checkbox" name="select" id="" class="table-checkbox">
+                            </td>
+                            <td>23</td>
+                            <td>Cold Fusion</td>
+                            <td>
+                                <div class="estado estado-activo">ACTIVO</div>
+                            </td>
+                            <td>
+                                <div class="credencial credencial-standard">STANDARD</div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-color-gris">
+                            <td>
+                                <input type="checkbox" name="select" id="" class="table-checkbox">
+                            </td>
+                            <td>56</td>
+                            <td>Bloodshot</td>
+                            <td>
+                                <div class="estado estado-activo">ACTIVO</div>
+                            </td>
+                            <td>
+                                <div class="credencial credencial-standard">STANDARD</div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-color-gris">
+                            <td>
+                                <input type="checkbox" name="select" id="" class="table-checkbox">
+                            </td>
+                            <td>08</td>
+                            <td>Mr Jones</td>
+                            <td>
+                                <div class="estado estado-activo">ACTIVO</div>
+                            </td>
+                            <td>
+                                <div class="credencial credencial-standard">STANDARD</div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-color-gris">
+                            <td>
+                                <input type="checkbox" name="select" id="" class="table-checkbox">
+                            </td>
+                            <td>16</td>
+                            <td>Men in Black International</td>
+                            <td>
+                                <div class="estado estado-activo">ACTIVO</div>
+                            </td>
+                            <td>
+                                <div class="credencial credencial-standard">STANDARD</div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="tr-color-gris">
+                            <td>
+                                <input type="checkbox" name="select" id="" class="table-checkbox">
+                            </td>
+                            <td>34</td>
+                            <td>Ralf Rompe Internet</td>
+                            <td>
+                                <div class="estado estado-activo">ACTIVO</div>
+                            </td>
+                            <td>
+                                <div class="credencial credencial-standard">STANDARD</div>
+                            </td>
+                            <td>
+                                <button class="button-table button-editar"> 
+                                    <div class="div-table-button">
+                                        <img src="/static/images/Dashboard/icons/digital-controller.png" alt="" class="tablebutton-img-edit"> 
+                                <button class="button-table button-eliminar"> 
+                                    <div class="div-table-button">
+                                        <img src="/static/images/Dashboard/icons/trash.png" alt="" class="tablebutton-img-trash"> 
+                                <button class="button-table button-opciones"> 
+                                    <div class="div-table-button">
+                                        <img src="/static/images/Dashboard/icons/ellipsis.png" alt="" class="tablebutton-img-options"> 
+                            </td>
+                        </tr>
+                    </tbody>
+        </main>
+    </div>    
+</body>
+</html>
