@@ -21,6 +21,10 @@ flask run
 
 Si se ha asegurado de configurar bien el interprete python, cada vez que abra el proyecto y ejecute el terminal hara la ejecución automatica de activacion del servidor para que ejecute flask como se indica arriba
 
+documentacion util para futuros proyectos
+
+https://www.caktusgroup.com/blog/2016/11/03/managing-multiple-python-projects-virtual-environments/
+
 
 
                 
