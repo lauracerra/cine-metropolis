@@ -1,0 +1,26 @@
+
+1. Crear entorno virtual a través de la siguiente linea de código
+python3 -m venv venv ==> Este argumento final corresponde a el nombre del servidor de tu proyecto
+
+Si aún no has creado carpeta del proyecto puedes hacerlo a través del terminal así
+mkdir myproject ==> "myproject" seria el nombre que le quieras definir a tu proyecto (carpeta)
+cd myproject en este parte estas accediendo a la carpeta creada para crear todos los archivos dentro de esta
+
+2. Asegurate que definas en el VSCODE que el interprete python que se ejecuta para tu proyecto es el que esta definido para tu entorno virtual. Así evitas errores durante la ejecución, como en este caso particular los participantes del proyecto tienen diferentes sistemas operativos y por tanto es necesario establecer 2 servidores de ejecución diferentes (para este caso tenemos servidor MAC "sermac" y servidor Windows "server")
+
+3. Cuando se cree el proyecto, haga pruebas cerrando la carpeta en VSCODE y luego abriendola nuevamente para asegurarse que la ejecucion de flask funcione bien y que no tenga errores de acceso (el interprete al abrir el proyecto deberia salir "Python 3.x.x 64 bits ('sermac':venv))
+
+4. para ejecutar flask haga lo siguiente 
+- asegurarse que este activado el servidor '(sermac) giank@iMac-de-Giank cine-metropolis %' si no esta activa proceda con el siguiente codigo 
+'. sermac/bin/activate'
+- instale flask si aun no lo ha hecho
+pip install Flask
+- ejecute flask 
+export FLASK_APP=index.py
+flask run
+
+Si se ha asegurado de configurar bien el interprete python, cada vez que abra el proyecto y ejecute el terminal hara la ejecución automatica de activacion del servidor para que ejecute flask como se indica arriba
+
+
+
+                
