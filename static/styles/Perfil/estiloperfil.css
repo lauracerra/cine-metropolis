@@ -103,7 +103,7 @@ header nav a.activo {
 
 .submenu {
   position: absolute;
-  background: #666666;
+  background: #6666;
   width: 300px;
   display: none;
   z-index: 10;
