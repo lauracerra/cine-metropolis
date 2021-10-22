@@ -18,7 +18,7 @@
     <header class="header row">
       <div class="contenedor_cabecera row">
         <div class="logo">
-          <a href="/MetropolisWebProyect/templates/PaginaPrincipal/index.html">
+          <a href="/templates/PaginaPrincipal/index.html">
             <img src="../../static/images/Navigation/LogoMain.png" alt=""
           /></a>
         </div>
@@ -86,13 +86,14 @@
       </div>
     </header>
     <div class="SignUp">
+
       <div class="cod-container">
-        <form class="form-inline" role="form">
+        <form class="form-inline" role="form" name="formulario">
           <div class="form-group-body row">
             <div class="column form-group-body-col">
               <input
                 class="control"
-                type="nombres"
+                type="text"
                 name="nombres"
                 id="nombres"
                 placeholder="Nombre Completo"
@@ -106,21 +107,21 @@
               />
               <input
                 class="control"
-                type="documento"
+                type="text"
                 name="documento"
                 id="documento"
                 placeholder="Documento De Identidad"
               />
               <input
                 class="control"
-                type="ciudad"
+                type="text"
                 name="ciudad"
                 id="ciudad"
                 placeholder="Ingrese Su Ciudad"
               />
               <input
                 class="control"
-                type="contraseña"
+                type="password"
                 name="contraseña"
                 id="contraseña"
                 placeholder="Ingrese Una Contraseña"
@@ -129,14 +130,14 @@
             <div class="column form-group-body-col">
               <input
                 class="control"
-                type="direccion"
+                type="text"
                 name="direccion"
                 id="direccion"
                 placeholder="Direccion"
               />
               <input
                 class="control"
-                type="celular"
+                type="number"
                 name="celular"
                 id="celular"
                 placeholder="Numero de celular"
@@ -160,7 +161,7 @@
               </select>
               <input
                 class="control"
-                type="confirmarcontraseña"
+                type="password"
                 name="confirmarcontraseña"
                 id="confirmarcontraseña"
                 placeholder="Confirme La Contraseña"
@@ -171,9 +172,11 @@
             <div class="checkbox">
               <label> <input type="checkbox" /> Acepta términos </label>
             </div>
-            <button type="submit" class="btn btn-default">Registrar</button>
+            <input type="submit" class="btn btn-default" value="Registrar"></input>
           </div>
         </form>
+
+
       </div>
     </div>
     <footer class="column footer">

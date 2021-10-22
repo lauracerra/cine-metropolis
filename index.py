@@ -43,6 +43,20 @@ def Dashboard():
         return render_template('Dashboard/dashboardThree.html')
     return render_template('Dashboard/dashboardThree.html')
 
+@app.route('/Perfil',methods=['GET','POST'])
+def perfil():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('Perfil/perfil.html')
+    return render_template('Perfil/perfil.html')
+
+@app.route('/Funcion',methods=['GET','POST'])
+def funcion():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('Funcion/funcion.html')
+    return render_template('Funcion/funcion.html')
+
 
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
