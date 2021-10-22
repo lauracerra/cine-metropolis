@@ -1,0 +1,380 @@
+/* ---- ----- ----- area del menu----- ----- ----- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+  
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+  
+.header {
+  width: 100%;
+  background: #001d3d;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+  
+.SignUp {
+  height: calc(100% - 160px);
+  width: 100%;
+}
+  
+.column {
+  display: flex;
+  flex-direction: column;
+}
+  
+.row {
+  display: flex;
+  flex-direction: row;
+}
+  
+.contenedor_cabecera {
+  background: #001d3d;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.logo {
+  width: 20%;
+  background: #001d3d;
+  float: left;
+}
+  
+.logo p a {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Open Sans";
+  text-decoration: none;
+}
+  
+.navegacion {
+  font-size: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+  
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  font-size: 40px;
+}
+  
+header nav a {
+  color: #ffff;
+  text-decoration: none;
+  margin-right: 30px;
+}
+  
+header nav a:hover,
+header nav a.activo {
+  color: #ffc300;
+  transition: 0.3s;
+}
+  
+.navegacion ul {
+  list-style: none;
+}
+  
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+  
+.submenu {
+  position: absolute;
+  background: #6666;
+  width: 300px;
+  display: none;
+  z-index: 10;
+}
+  
+.submenu li a {
+  font-size: 20px;
+}
+  
+.menu li:hover .submenu {
+  display: block;
+}
+  
+.login-signup-menu {
+  background-color: #666666;
+  padding: 5px;
+  min-width: 50px;
+  min-height: 50px;
+  position: absolute;
+  top: 80px;
+  right: 32px;
+  display: none;
+  flex-direction: column;
+}
+  
+.login-signup-menu a {
+  color: #fff;
+}
+
+.login-signup-menu a:hover {
+  cursor: pointer;
+  color: #ffc300;
+}
+  /* ---- ----- ----- area del login----- ----- ----- */
+  
+.login {
+  object-fit: contain;
+  background: url(../imagenes/imagen.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 740px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.form-group-body-col1 {
+  width: 38%;
+  height: -webkit-fill-available;
+  padding: 15px 20px;
+}
+
+.form-group-body-col2 {
+  width: 50%;
+  height: -webkit-fill-available;
+  padding: 15px 10px;
+}
+
+.form-group-body-col2 h2 {
+  text-align:center;
+  font-family:'Montserrat';
+  font-size: 14;
+  font-weight:300;
+  color: black;
+}
+
+.form-group-body-col2 p {
+  text-align:justify;
+  font-family:'Montserrat';
+  font-size: 12;
+  font-weight:500;
+  color: black;
+}
+
+.cod-container {
+  padding: 1rem 2rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+}
+  
+.login h1 {
+  font-size: 22px;
+  margin-bottom: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "raleway";
+}
+
+.form-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: 32px;
+  color: #ffc300;
+  overflow: hidden;
+  font-family: "raleway";
+}
+  
+.login h3 {
+  position: relative;
+  display: inline-block;
+  color: #ffc300;
+  padding: 0 10px;
+  font-weight: normal;
+}
+  
+.form-header {
+  background: #001d3d;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+  
+.form-register {
+  width: 600px;
+  background: #fffdfd;
+  padding: 30px;
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 200px;
+  border-radius: 4px;
+  font-family: "raleway";
+  color: white;
+}
+  
+.form-inline-container {
+  width: 65%;
+  height: 100%;
+  background-color: #ECF6F9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+  float:left;
+}
+
+.container2 {
+  width: 30%;
+  height: 100%;
+  background-color: #ECF6F9;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.15);
+  float:right;
+  padding: 10px;
+
+}
+h4{
+  padding: 4% 5px;
+}
+
+.content {
+  width: 56px;
+  height: 50px;
+  background-color: #001D3D;
+  border-radius: 10px;
+  display:-webkit-inline-flex;        
+  justify-content: center;
+  padding: 5% 5%;
+  
+  
+}
+
+.horario-funciones {
+  position: relative;
+  background-color: #ECF6F9;
+  gap: 5px;
+}
+
+.shedule-item{
+  background-color: #C9DFED;
+}
+  
+.horario-funciones li a:hover{
+  background-color:#ECF6F9;
+} 
+
+.horario-funciones > li >a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 5px ;
+} 
+
+.horario{
+  position: absolute;
+  background: #ECF6F9 ;
+  width: 120%;
+  display: none;
+} 
+
+.horario a{
+ display: block;
+ padding: 10px;
+ color:black;
+ text-decoration: none;
+} 
+
+.horario-funciones li:hover .horario{
+  display: flex;
+} 
+
+.shedule-item-content{
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+
+.shedule-item a{
+  text-decoration: none;
+  color: #000;
+}
+
+.is-required:after {
+  content: "*";
+  margin-left: 3px;
+  color: red;
+  font-weight: bold;
+}
+  
+.cod-form {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding: 10px 40px 40px;
+}
+  
+.footer {
+  background-color: #001d3d;
+  height: 80px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  gap: 10px;
+}
+  
+.footer-icons {
+  gap: 10px;
+}
+  
+.content-logo {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.footer-ico {
+   width: 18px;
+  height: 18px;
+}
+
+.funcion {
+  width: 270px;
+  height: 380px;
+}
+  
