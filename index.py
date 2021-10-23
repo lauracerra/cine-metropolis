@@ -1,10 +1,30 @@
 from flask import Flask,redirect,url_for,render_template,request
+# database
 from flask_sqlalchemy import SQLAlchemy
 
+# import sqlite3
+# from flask import g
 
-app=Flask(__name__) 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///datebase/metropolis.db"
-db = SQLAlchemy(app)
+# DATABASE = '/datebase/metropolis.db'
+
+# def get_db():
+#     db = getattr(g, '_database', None)
+#     if db is None:
+#         db = g._database = sqlite3.connect(DATABASE)
+#     return db
+
+# @app.teardown_appcontext
+# def close_connection(exception):
+#     db = getattr(g, '_database', None)
+#     if db is not None:
+#         db.close()
+# # database
+
+app=Flask(__name__)     
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///datebase/metropolis.db"      
+login_manager = LoginManager(app)       
+login_manager.login_view = "login"      
+db = SQLAlchemy(app)    
 
 
 
@@ -22,17 +42,6 @@ def login():
         # Handle POST Request here
         return render_template('Login/inicio.html')
     return render_template('Login/inicio.html')
-
-@app.route("/create-account", methods=['POST'])
-def create():
-    # CreateAccount(email=request.form['email'])
-    try
-
-class CreateAccount(db.Model):
-    id = db.Column(db.integer, primary_key=True)
-    email = db.Column(db.String(100))
-    password
-    done = db.Column(db.Boolean)
 
 
 @app.route('/registro',methods=['GET','POST'])
