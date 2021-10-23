@@ -1,6 +1,14 @@
 from flask import Flask,redirect,url_for,render_template,request
+from flask_sqlalchemy import SQLAlchemy
 
-app=Flask(__name__)
+
+app=Flask(__name__) 
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///datebase/metropolis.db"
+db = SQLAlchemy(app)
+
+
+
+
 @app.route('/',methods=['GET','POST'])
 def home():
     if request.method=='POST':
@@ -14,6 +22,18 @@ def login():
         # Handle POST Request here
         return render_template('Login/inicio.html')
     return render_template('Login/inicio.html')
+
+@app.route("/create-account", methods=['POST'])
+def create():
+    # CreateAccount(email=request.form['email'])
+    try
+
+class CreateAccount(db.Model):
+    id = db.Column(db.integer, primary_key=True)
+    email = db.Column(db.String(100))
+    password
+    done = db.Column(db.Boolean)
+
 
 @app.route('/registro',methods=['GET','POST'])
 def registro():
