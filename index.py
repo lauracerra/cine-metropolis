@@ -85,6 +85,20 @@ def funcion():
         return render_template('Funcion/funcion.html')
     return render_template('Funcion/funcion.html')
 
+@app.route('/Funcion/Ralph',methods=['GET','POST'])
+def funcion2():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('Funcion/funcion2.html')
+    return render_template('Funcion/funcion2.html')
+
+@app.route('/Funcion/Avenger',methods=['GET','POST'])
+def funcion3():
+    if request.method=='POST':
+        # Handle POST Request here
+        return render_template('Funcion/funcion3.html')
+    return render_template('Funcion/funcion3.html')
+
 
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
