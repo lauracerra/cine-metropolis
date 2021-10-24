@@ -13,7 +13,7 @@ function validate() {
 
 	if(email == 'admin@gmail.com' && password == 'admin'){
 		// window.location.replace("/templates/Dashboard/dashboardOne.html")
-		window.open("/templates/Dashboard/dashboardOne.html")
+		window.open("/dashboard/Perfil")
 	}else{
 		alert("Usuario inválido")
 	}
