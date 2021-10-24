@@ -72,3 +72,9 @@ $(document).ready(function(){
 	}
 
 });
+
+function movies(movie) {
+	if(movie == 'avenger'){
+		var movie = 'avenger'
+	}
+}
