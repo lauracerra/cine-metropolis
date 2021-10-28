@@ -162,7 +162,6 @@ header nav a.activo {
 	margin-bottom: 32px;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: "raleway";
 }
 .form-title{
 	text-align: center;
@@ -172,7 +171,6 @@ header nav a.activo {
 	margin-bottom: 32px;
 	color: #FFC300;
 	overflow: hidden;
-	font-family: "raleway";
 	
 }
 
@@ -214,7 +212,7 @@ h3::before{
 
 
 .form-header img{
-	vertical-align: top;
+	vertical-align: 80%;
 	width: 40px;
 }
 
@@ -241,7 +239,6 @@ input[type="password"]{
 	font-size: 14px;
 	color:#545454;
 	padding-left: 10px;
-	font-family: "raleway";
 }
 
 label{
@@ -262,7 +259,6 @@ label{
 	font-family:"raleway" ;
 }
 input[type="submit"] {
-	font-family: "raleway";
 	border: 0.8;
 	font-weight: bold;
 	opacity: 0.9;

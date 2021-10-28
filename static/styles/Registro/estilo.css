@@ -84,8 +84,7 @@ header nav a {
   margin-right: 30px;
 }
 
-header nav a:hover,
-header nav a.activo {
+header nav a:hover {
   color: #ffc300;
   transition: 0.3s;
 }
@@ -157,7 +156,7 @@ header nav a.activo {
   border-radius: 40px;
   background-color: #2f80ed;
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 1.40rem;
   padding: 1em;
   border: none;
   cursor: pointer;
@@ -192,7 +191,6 @@ header nav a.activo {
   margin-bottom: 32px;
   color: #fff;
   text-transform: uppercase;
-  font-family: "raleway";
 }
 .form-title {
   text-align: center;
@@ -202,7 +200,6 @@ header nav a.activo {
   margin-bottom: 32px;
   color: #ffc300;
   overflow: hidden;
-  font-family: "raleway";
 }
 
 .login h3 {
@@ -245,7 +242,6 @@ header nav a.activo {
   border-top: none;
   border-left: none;
   border-right: none;
-  font-family: "raleway";
   font-size: 18px;
   margin-left: 40px;
   outline: none;
