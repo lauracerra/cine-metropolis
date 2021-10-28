@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
     />
-    <script src="/MetropolisWebProyect/static/js/PaginaPrincipal/jquery-3.1.0.min.js"></script>
-    <script src="/MetropolisWebProyect/static/js/Login/formulario.js"></script>
+    <script src="/static/js/PaginaPrincipal/jquery-3.1.0.min.js"></script>
+    <script src="/static/js/Login/formulario.js"></script>
+    <script src="/static/js/funcion2/calificar.js"></script>
+
     <title>Funcion</title>
   </head>
   
@@ -303,22 +305,4 @@
       <div>Terms and Conditions & privacy policy</div>
     </footer>
   </body>
-  <script>
-    var contador;
-    function calificar(item){
-      console.log(item);
-      contador=item.id[0];
-      let nombre = item.id.substring(1);
-      for(let i=0;i<5;i++){
-          if (i<contador){
-              document.getElementById((i+1)+nombre).style.color="orange";
-          }else{
-            document.getElementById((i+1)+nombre).style.color="black";
-          }
-      } 
-    }
-    function mensaje(){
-      alert("Su Calificacion Se Recibio")
-    }
-  </script>
 </html>

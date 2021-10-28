@@ -9,8 +9,13 @@
       rel="stylesheet"
       href="/MetropolisWebProyect/static/styles/PaginaPrincipal/font-awesome.css"
     />
-    <script src="/MetropolisWebProyect/static/js/PaginaPrincipal/jquery-3.1.0.min.js"></script>
-    <script src="/MetropolisWebProyect/static/js/Login/formulario.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+    />
+    <script src="/static/js/PaginaPrincipal/jquery-3.1.0.min.js"></script>
+    <script src="/static/js/Login/formulario.js"></script>
+    <script src="/static/js/funcion2/calificar.js"></script>
+
     <title>Funcion</title>
   </head>
   
@@ -18,15 +23,16 @@
     <header class="header row">
       <div class="contenedor_cabecera row">
         <div class="logo">
-          <a href="/">
+          <a href="../PaginaPrincipal/index.html">
             <img src="../../static/images/Navigation/LogoMain.png" alt=""
           /></a>
         </div>
         <nav class="navegacion row">
-            <a
-                href="/" class="activo">
-                Cartelera
-            </a>
+          <a
+            href="/MetropolisWebProyect/templates/PaginaPrincipal/index.html"
+            class="activo"
+            >Cartelera</a
+          >
           <a href="teatro">Teatro</a>
           <a href="dulceria">Dulceria</a>
           <a href="nosotros">Nosotros</a>
@@ -35,7 +41,8 @@
               <ul class="submenu">
                 <li>
                   <a href="informacion_sobre_nosotros"
-                    >Información sobre nosotros</a>
+                    >Información sobre nosotros</a
+                  >
                 </li>
                 <li>
                   <a href="servicios_empresariales">Servicios empresariales</a>
@@ -53,14 +60,16 @@
                     action="aca iria la ruta para buscar cualquier cosa de la pagina"
                     name="formbusqueda"
                     id="formbusqueda"
-                    autocomplete="off">
+                    autocomplete="off"
+                  >
                     <input
                       id="inputHome"
                       placeholder="Que estas buscando..."
                       class="usuario.busca"
                       type="text"
                       name="usuario-escribe"
-                      target="right top">
+                      target="right top"
+                    />
                   </form>
                 </div>
               </li>
@@ -70,8 +79,10 @@
                   style="color: white; font-size: 32px"
                 ></span>
                 <div class="login-signup-menu" id="loginSignupMenu">
-                  <a href="/login">Login</a>
-                  <a href="/registro">Registro</a>
+                  <a href="/MetropolisWebProyect/templates/Login/inicio.html"
+                    >login</a
+                  >
+                  <a href="funcion">Funcion</a>
                 </div>
               </li>
             </div>
@@ -80,112 +91,189 @@
       </div>
     </header>
     <div class="SignUp">
-      <div class="cod-container">
-                <div class="form-inline-container">
-                    <div class="column form-group-body-col1" >
-                      <img src="/static/images/funcion/ralph.jpg" alt="" class="funcion" id="funcion"">
-                    </div>
-                    <div class="column form-group-body-col2">
-                      <h2 id="titulo">Ralph: El demoledor</h2> <br>
-                      <p id="sinopsis"><span style="color:#ffc300">Sinopsis:</span>La película cuenta la historia de Ralph, el Demoledor, un villano de un videojuego de la década 1980 y década 1990 en una de las más famosas maquinas de arcade de 8-bits llamada Repara-Félix Jr., que esta cansado de ser el antagonista malvado. Desea demostrarle a los demás que también puede hacer cosas buenas. Todo esto tiene lugar en los espacios virtuales dentro de las maquinas arcades locales de un salón de videojuegos llamado Litwak's Arcade. </p> <br>
-                      <!-- <p id="original"><span style="color:#ffc300">Original:</span></p> <br> -->
-                      <p id="reparto"><span style="color:#ffc300">Reparto:</span>Adam Carolla, Alan Tudyk, April Stewart, Ava Acres, Bob Bergen, Brandon Scott, Brian Kesinger, Cymbre Walk, Daniel Kaz, Dave Kohut, David Boat, David Cowgill, Debi Derryberry, Dennis Haysbert, </p> <br>
-                      <p id="director"><span style="color:#ffc300">Director:</span>Kelly Feeg, Matsune Suzuki, Merrick Rustia, Rich Moore, Rick Moore, Rob Dressel </p> <br>
-                    </div>
+      <div class="cod-container row">
+        <div class="form-inline-container">
+          <div class="column form-group-body-col1">
+            <img
+              src="../../static/images/PaginaPrincipal/Ralph.jpg"
+              alt=""
+              class="funcion"
+            />
+            <div>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="1estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="2estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="3estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="4estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="5estrella"></span>
+            </div>
+          </div>
+          <div class="column form-group-body-col2">
+            <div class="body-col2-content cont-1">
+              <h1 class="title">RALPH WIIFI</h1>
+            </div>
+            <div class="body-col2-content cont-2 column">
+              <div class="row content-description">
+                <div class="column">
+                  <div class="sub-title-description">Sinopsis:</div>
                 </div>
-                <div  class="container2">
-                  <h4>OCT</h4>
-                  <div class="content">
-                    
-                  </div>
-                  <div class="content">
-                    
-                  </div>
-                  <div class="content">
-                    
-                  </div>
-                  <div class="content">
-      
-                  </div>
-                  <div class="content">
-                    
-                  </div>
-                  <h4>Funciones</h4> <br>
-                    <nav>
-                      <ul class="horario-funciones column">
-                          <li class="shedule-item">
-                            <div class="row shedule-item-content">
-                              <a href="">Americas</a>
-                              <img src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg" alt="">
-                            </div>
-                            <ul class="horario row "> 
-                                <a href="/cboleta">1:00 pm</a>
-                                <a href="">3:00 pm</a>
-                                <a href="">6:00 pm</a>
-                            </ul> 
-                          </li>
-                          <li class="shedule-item">
-                            <div class="row shedule-item-content">
-                              <a href="">Cedritos</a> 
-                              <img src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg" alt="">
-                            </div>
-                            <ul class="horario row">
-                              <a href="">1:00 pm</a>
-                              <a href="">3:00 pm</a>
-                              <a href="">6:00 pm</a>
-                            </ul> 
-                          </li>
-                          <li class="shedule-item">
-                            <div class="row shedule-item-content">
-                              <a href="">Galerias</a>
-                              <img src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg" alt="">
-                            </div>
-                            <ul class="horario row">
-                              <a href="">1:00 pm</a>
-                              <a href="">3:00 pm</a> 
-                              <a href="">6:00 pm</a>
-                            </ul> 
-                          </li>
-                          <li class="shedule-item">
-                            <div class="row shedule-item-content">
-                              <a href="">Ventura</a>
-                              <img src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg" alt="">
-                            </div>
-                            <ul class="horario row">
-                              <a href="">1:00 pm</a>
-                              <a href="">3:00 pm</a> 
-                              <a href="">6:00 pm</a>
-                            </ul> 
-                          </li>
-                          <li class="shedule-item">
-                            <div class="row shedule-item-content">
-                              <a href="">Centro Mayor</a>
-                              <img src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg" alt="">
-                            </div>
-                            <ul class="horario row">
-                              <a href="">1:00 pm</a>
-                              <a href="">3:00 pm</a> 
-                              <a href="">6:00 pm</a>
-                            </ul> 
-                          </li>
-                          <li class="shedule-item">
-                            <div class="row shedule-item-content">
-                              <a href="">Plaza Central</a>
-                              <img src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg" alt="">
-                            </div>
-                            <ul class="horario row"> 
-                              <a href="">1:00 pm</a>
-                              <a href="">3:00 pm</a> 
-                              <a href="">6:00 pm</a>
-                            </ul> 
-                          </li>
-                      </ul>
-                    </nav>
-
+                <div class="column">
+                  <p class="paragraph-description">
+                    La película cuenta la historia de Ralph, el Demoledor, un villano de un videojuego 
+                    de la década 1980 y década 1990 en una de las más famosas maquinas de arcade de
+                    8-bits llamada Repara-Félix Jr., que esta cansado de ser el antagonista malvado.
+                    Desea demostrarle a los demás que también puede hacer cosas buenas. Todo esto tiene
+                    lugar en los espacios virtuales dentro de las maquinas arcades locales de un salón 
+                    de videojuegos llamado Litwak's Arcade.
+                  </p>
                 </div>
+              </div>
+              <div class="row content-description">
+                <div class="column">
+                  <div class="sub-title-description">Original:</div>
+                </div>
+                <div class="column">
+                  <p class="paragraph-description">Ralph Breaks the Internet</p>
+                </div>
+              </div>
+              <div class="row content-description">
+                <div class="column">
+                  <div class="sub-title-description">Reparto:</div>
+                </div>
+                <div class="column">
+                  <p class="paragraph-description">
+                    John C. Reilly, Sarah Silverman, Bill Hader
+                  </p>
+                </div>
+              </div>
+              <div class="row content-description">
+                <div class="column">
+                  <div class="sub-title-description">Director:</div>
+                </div>
+                <div class="column">
+                  <p class="paragraph-description">Rich Moore, Phil Johnston</p>
+                </div>
+              </div>
+            </div>
+            <div class="content-button-play">
+              <a
+                href="https://youtu.be/iBFhE0TtbNI"
+                class="row button-play"
+              >
+                <div>VER TRAILER</div>
+                <div>
+                  <img
+                    src="../../static/images/PaginaPrincipal/PlayIcon.svg"
+                    alt=""
+                    class="ico-play"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div>OCT</div>
+          <div class="row content-dates">
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+          </div>
+          <h4>Funciones</h4>
+          <br />
+          <nav>
+            <ul class="horario-funciones column">
+              <li class="shedule-item">
+                <div class="row shedule-item-content">
+                  <a href="">Americas</a>
+                  <img
+                    src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg"
+                    alt=""
+                  />
+                </div>
+                <ul class="horario row">
+                  <a href="">1:00 pm</a>
+                  <a href="">3:00 pm</a>
+                  <a href="">6:00 pm</a>
+                </ul>
+              </li>
+              <li class="shedule-item">
+                <div class="row shedule-item-content">
+                  <a href="">Cedritos</a>
+                  <img
+                    src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg"
+                    alt=""
+                  />
+                </div>
+                <ul class="horario row">
+                  <a href="">1:00 pm</a>
+                  <a href="">3:00 pm</a>
+                  <a href="">6:00 pm</a>
+                </ul>
+              </li>
+              <li class="shedule-item">
+                <div class="row shedule-item-content">
+                  <a href="">Galerias</a>
+                  <img
+                    src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg"
+                    alt=""
+                  />
+                </div>
+                <ul class="horario row">
+                  <a href="">1:00 pm</a>
+                  <a href="">3:00 pm</a>
+                  <a href="">6:00 pm</a>
+                </ul>
+              </li>
+              <li class="shedule-item">
+                <div class="row shedule-item-content">
+                  <a href="">Ventura</a>
+                  <img
+                    src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg"
+                    alt=""
+                  />
+                </div>
+                <ul class="horario row">
+                  <a href="">1:00 pm</a>
+                  <a href="">3:00 pm</a>
+                  <a href="">6:00 pm</a>
+                </ul>
+              </li>
+              <li class="shedule-item">
+                <div class="row shedule-item-content">
+                  <a href="">Centro Mayor</a>
+                  <img
+                    src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg"
+                    alt=""
+                  />
+                </div>
+                <ul class="horario row">
+                  <a href="">1:00 pm</a>
+                  <a href="">3:00 pm</a>
+                  <a href="">6:00 pm</a>
+                </ul>
+              </li>
+              <li class="shedule-item">
+                <div class="row shedule-item-content">
+                  <a href="">Plaza Central</a>
+                  <img
+                    src="../../static/images/PaginaPrincipal/motion_icon-desplazar-abajo.svg"
+                    alt=""
+                  />
+                </div>
+                <ul class="horario row">
+                  <a href="">1:00 pm</a>
+                  <a href="">3:00 pm</a>
+                  <a href="">6:00 pm</a>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-    </div>
+
     <footer class="column footer">
       <div class="row footer-icons">
         <div class="content-logo">

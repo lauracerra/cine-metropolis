@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../../static/styles/Funcion/funcion.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/static/styles/PaginaPrincipal/font-awesome.css"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+    />
+    <script src="/static/js/PaginaPrincipal/jquery-3.1.0.min.js"></script>
+    <script src="/static/js/Login/formulario.js"></script>
+    <script src="/static/js/funcion2/calificar.js"></script>
+
     <title>Funcion</title>
   </head>
   
@@ -80,6 +91,13 @@
                 <div class="form-inline-container">
                     <div class="column form-group-body-col1" >
                       <img src="/static/images/funcion/avenger.jpg" alt="" class="funcion" id="funcion"">
+                      <div>
+                        <span class="fa fa-star" onclick="calificar(this), mensaje()" id="1estrella"></span>
+                        <span class="fa fa-star" onclick="calificar(this), mensaje()" id="2estrella"></span>
+                        <span class="fa fa-star" onclick="calificar(this), mensaje()" id="3estrella"></span>
+                        <span class="fa fa-star" onclick="calificar(this), mensaje()" id="4estrella"></span>
+                        <span class="fa fa-star" onclick="calificar(this), mensaje()" id="5estrella"></span>
+                      </div>
                     </div>
                     <div class="column form-group-body-col2">
                       <h2 id="titulo">Avengers: Endgame</h2> <br>

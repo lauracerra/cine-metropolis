@@ -85,7 +85,8 @@ header nav a {
   margin-right: 30px;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a.activo {
   color: #ffc300;
   transition: 0.3s;
 }
@@ -251,6 +252,7 @@ header nav a:hover {
 .fa {
   cursor: pointer;
   margin-top: 15px;
+  
 }
 .cod-container {
   padding: 1rem 2rem;
