@@ -110,6 +110,12 @@ def crear():
     db.session.commit()
     return "saved"
 
+@app.route('/cboleta', methods=['GET', 'POST'])
+def boleta():
+    if request.method == 'POST':
+        # Handle POST Request here
+        return render_template('Compraboleta/cboleta.html')
+    return render_template('Compraboleta/cboleta.html')
 
 if __name__ == '__main__':
     # DEBUG is SET to TRUE. CHANGE FOR PROD
