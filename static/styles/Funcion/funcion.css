@@ -249,6 +249,10 @@ header nav a.activo {
   align-items: center;
 }
 
+.fa {
+  cursor: pointer;
+  margin-top: 15px;
+}
 .cod-container {
   padding: 1rem 2rem;
   align-items: center;

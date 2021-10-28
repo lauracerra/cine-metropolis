@@ -9,6 +9,9 @@
       rel="stylesheet"
       href="/MetropolisWebProyect/static/styles/PaginaPrincipal/font-awesome.css"
     />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"
+    />
     <script src="/MetropolisWebProyect/static/js/PaginaPrincipal/jquery-3.1.0.min.js"></script>
     <script src="/MetropolisWebProyect/static/js/Login/formulario.js"></script>
     <title>Funcion</title>
@@ -94,6 +97,13 @@
               alt=""
               class="funcion"
             />
+            <div>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="1estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="2estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="3estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="4estrella"></span>
+              <span class="fa fa-star" onclick="calificar(this), mensaje()" id="5estrella"></span>
+            </div>
           </div>
           <div class="column form-group-body-col2">
             <div class="body-col2-content cont-1">
@@ -293,4 +303,22 @@
       <div>Terms and Conditions & privacy policy</div>
     </footer>
   </body>
+  <script>
+    var contador;
+    function calificar(item){
+      console.log(item);
+      contador=item.id[0];
+      let nombre = item.id.substring(1);
+      for(let i=0;i<5;i++){
+          if (i<contador){
+              document.getElementById((i+1)+nombre).style.color="orange";
+          }else{
+            document.getElementById((i+1)+nombre).style.color="black";
+          }
+      } 
+    }
+    function mensaje(){
+      alert("Su Calificacion Se recibio")
+    }
+  </script>
 </html>
